@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+.header {
+	height: 150px;
+	background: #cfe5ef;
+}
+
+/* задаём размер центрального блока */
+
+.center {
+	width: 1252px;
+	margin: 0 auto;
+}
+
+/* размещаем элементы по сторонам */
+
+.header-left {
+	float: left;
+}
+
+.header-right {
+	float: right;
+}
+
+/* задаем строчную структуру элементам для обтекания */
+img {
+	display: inline-block;
+}
+
+nav {
+	display: inline-block;
+}
+
+.topmenu > li {
+	display: inline-block;
+	position: relative;
+}
+
+/* убираем подменю */
+
+.popupmenu {
+  position: absolute;
+  z-index: 1;
+  transition: .5s ease-in-out;
+  display: none;
+  white-space: nowrap;
+  top: 100%;
+  left: 0;
+  background: #fff;
+}
+
+ul li:hover .popupmenu {
+	display: block;
+}
