@@ -6,6 +6,31 @@ a {
   display: block;
   color: #000;
   text-decoration: none;
-  transition: .5s linear;
-  padding: 10px 15px;
+  transition: background-color .1s linear;
+  padding: 0px 15px;
+}
+
+ul li:hover .galery {
+	background-color: #fff;
+}
+
+.topmenu {
+	font-size: 0;
+}
+
+.topmenu > li {
+	border-right: 3px solid;
+	font-size: 16px;
+}
+
+.topmenu > li:last-child {
+	border-right: none;
+}
+
+/* задаём размер кнопки */
+
+input {
+	width: 125px;
+	height: 60px;
+	text-transform: uppercase;
 }
