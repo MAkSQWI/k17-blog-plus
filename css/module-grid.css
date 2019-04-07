@@ -76,7 +76,7 @@
 }
 
 .module-grid--gutters > * {
-	padding: 0 10px;
+	padding: 0 20px;
 	box-sizing: border-box;
 	margin-bottom: 20px;
 }

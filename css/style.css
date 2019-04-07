@@ -35,12 +35,28 @@ input {
 	text-transform: uppercase;
 }
 
-.first-float__content {
+.first-float__content,
+.second-float__content {
 	background: #e2e2e2;
 	border: 1px solid #9f9f9f;
 }
 
+/* задаём отступы для заголовков */
+.headline_txt > h3 {
+	padding-top: 64px;
+	margin: 0;
+}
+
+.headline_txt-2 > h3 {
+	margin: 0;
+	padding: 76px 0 0;
+}
+
+.first-float__content,
 .second-float__content {
-	background: #e2e2e2;
-	border: 1px solid #9f9f9f;
+	font-size: 50px;
+}
+
+.reviews-text__desc > p {
+	margin-left: 25px;
 }
