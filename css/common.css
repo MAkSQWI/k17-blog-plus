@@ -69,22 +69,20 @@ ul li:hover .popupmenu {
 
 /* задаём центрирование секции с флоатами */
 
-.float {
+.first-float,
+.second-float {
 	width: 1252px;
 	margin: 0 auto;
 }
-
-h3 {
-	padding-top: 60px;
+/*  */
+.headline_txt > h3 {
+	padding-top: 64px;
+	margin: 0;
 }
 
 /* position for line */
 
 .line {
 	position: relative;
-	top: -25px;
-}
-
-.headline2 > h3 {
-	margin: 36px 0;
+	top: -5px;
 }

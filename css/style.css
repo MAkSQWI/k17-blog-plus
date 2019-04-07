@@ -35,12 +35,12 @@ input {
 	text-transform: uppercase;
 }
 
-.demo {
+.first-float__content {
 	background: #e2e2e2;
 	border: 1px solid #9f9f9f;
 }
 
-.demo2 {
+.second-float__content {
 	background: #e2e2e2;
 	border: 1px solid #9f9f9f;
 }
