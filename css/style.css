@@ -34,3 +34,13 @@ input {
 	height: 60px;
 	text-transform: uppercase;
 }
+
+.demo {
+	background: #e2e2e2;
+	border: 1px solid #9f9f9f;
+}
+
+.demo2 {
+	background: #e2e2e2;
+	border: 1px solid #9f9f9f;
+}

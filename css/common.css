@@ -66,3 +66,25 @@ nav {
 ul li:hover .popupmenu {
 	display: block;
 }
+
+/* задаём центрирование секции с флоатами */
+
+.float {
+	width: 1252px;
+	margin: 0 auto;
+}
+
+h3 {
+	padding-top: 60px;
+}
+
+/* position for line */
+
+.line {
+	position: relative;
+	top: -25px;
+}
+
+.headline2 > h3 {
+	margin: 36px 0;
+}
