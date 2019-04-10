@@ -3,6 +3,11 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
+p {
+	font-weight: bold;
+	font-size: 13px;
+}
+
 .clearfix::after {
 	content: '';
 	clear: both;
@@ -34,8 +39,9 @@ body {
 }
 
 /* задаем строчную структуру элементам для обтекания */
-img {
+.logo {
 	display: inline-block;
+	vertical-align: middle;
 }
 
 nav {
@@ -71,7 +77,9 @@ ul li:hover .popupmenu {
 
 .first-float,
 .second-float,
-.reviews {
+.reviews,
+.galery_photo,
+.elements_iput {
 	width: 1252px;
 	margin: 0 auto;
 }
@@ -83,4 +91,40 @@ ul li:hover .popupmenu {
 	position: relative;
 	top: -5px;
 	margin-bottom: 30px;
+}
+
+.line2 {
+	position: relative;
+	top: -20px;
+	margin-bottom: 30px;
+}
+
+/* отступы для линии между отзывами */
+
+hr {
+	margin: 35px 0;
+}
+
+/* задаём отступ от предыдущего блока отзывы */
+
+.reviews {
+	margin-bottom: 100px;
+}
+
+.galery-photo-headline > h3 {
+	text-align: center;
+}
+
+.galery_line {
+	position: relative;
+	top: -22px;
+	text-align: center;
+}
+/* text headline form */
+.headline_txt_form {
+	font-size: 24px;
+}
+
+p {
+
 }

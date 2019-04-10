@@ -29,7 +29,7 @@ ul li:hover .galery {
 
 /* задаём размер кнопки */
 
-input {
+.button {
 	width: 125px;
 	height: 60px;
 	text-transform: uppercase;
@@ -51,12 +51,354 @@ input {
 	margin: 0;
 	padding: 76px 0 0;
 }
-
+/* центрирование флоатов */
 .first-float__content,
 .second-float__content {
 	font-size: 50px;
 }
+/* стили для отзывов */
+.user-name {
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 14px;
+}
 
-.reviews-text__desc > p {
-	margin-left: 25px;
+.calendar {
+	margin: 0 8px 0 35px;
+	position: relative;
+	bottom: -3px;
+}
+/* отступ от имени посетитля */
+
+.review_info {
+	margin-bottom: 36px;
+}
+
+.review_text {
+	margin-left: 20px;
+}
+
+/* позиционирование фото в нутри рамки */
+
+.photo-row {
+	background: url(img/Shape.png) no-repeat; /* делаем задним фоном рамку */
+}
+
+.photo {
+	margin: 8px;
+}
+
+.photo_text {
+	font-size: 12px;
+	margin: 20px 0 0 10px;
+}
+
+.galery_photo_firstline {
+	margin-bottom: 50px;
+}
+
+.galery_photo_secondline {
+	margin-bottom: 80px;
+}
+
+/* styling for section with forms */
+
+.fs-input,
+.sc-input,
+.th-input {
+	height: 44px;
+	width: 270px;
+}
+
+.second-input {
+	position: relative;
+	background: #fff;
+}
+
+.sc-input:focus {
+	background-color: #edf8ff;
+}
+
+.sc-input:hover {
+	background-color: #edf8ff;
+}
+
+.second-icon {
+	background-image: url(img/lock_sprite.png);
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 39px;
+	left: 3px;
+}
+
+input[placeholder="Input text placeholder"] {
+	padding-left: 30px;
+	font-size: 13px;
+}
+
+input[placeholder="Input text placeholder"]:hover{
+	background-color: #edf8ff;
+}
+
+input[placeholder="Input text placeholder"]:focus{
+	background-color: #edf8ff;
+	font-weight: bold;
+}
+
+.second-icon:hover {
+	background-position: -24px 0;
+}
+
+.second-icon:focus {
+	background-position: -48px 0;
+}
+
+.call,
+.massage,
+.user {
+	text-transform: uppercase;
+}
+
+/* стили для checkbox */
+
+.buttons {
+	display: inline-block;
+	vertical-align: top;
+	padding: 35px 0;
+}
+
+.first-btn,
+.second-btn,
+.name-btn {
+	padding: 14px 0;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+.check-txt {
+  display:inline-block;
+  padding-left: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+i {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 3px;
+  margin-right: 10px;
+  vertical-align: sub;
+}
+
+i:before {
+  content: '';
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #4c3899;
+  transform: scale(0);
+  transition: .3s;
+}
+
+input[type="checkbox"]:checked + i:before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked + i {
+  border-color: #4c3899;
+}
+
+input[type="checkbox"]:checked ~ .check-txt {
+  color:  #4c3899;
+}
+
+/* стили для radio */
+
+input[type="radio"] {
+  display: none;
+}
+.check-txt {
+  display:inline-block;
+  padding-left: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+.radio {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: sub;
+}
+
+.radio:before {
+  content: '';
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  background: #4c3899;
+  transform: scale(0);
+  transition: .3s;
+}
+
+input[type="radio"]:checked + .radio:before {
+  transform: scale(1);
+}
+
+input[type="radio"]:checked + .radio {
+  border-color: #4c3899;
+}
+
+input[type="radio"]:checked ~ .check-txt {
+  color:  #4c3899;
+}
+
+/* стилизация поля ввода текста */
+
+.fild-area {
+	padding: 22px 0 20px;
+}
+
+.text-area {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+textarea[placeholder="Textarea placeholder"],
+textarea[placeholder="Textarea placeholder2"] {
+	resize: none;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 616px;
+	height: 170px;
+}
+
+textarea[placeholder="Textarea placeholder2"] {
+	padding: 10px 0 0 28px;
+}
+
+textarea:focus {
+  background-color: #edf8ff;
+  font-weight: bold;
+}
+
+/* style for icon area */
+
+.second-area {
+	position: relative;
+}
+
+.area-mass {
+	background: url(img/mass_sprite.png) no-repeat;
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	top: 33px;
+    left: 2px;
+}
+
+textarea:focus ~ .area-mass {
+	background-position: -48px 0;
+}
+
+/* стилизация кнопок */
+
+.btn {
+	position: relative;
+	padding-top: 20px;
+}
+
+button[type="submit"]{
+	height: 44px;
+	width: 106px;
+	text-transform: uppercase;
+	margin-right: 14px;
+	background: white;
+	border: 1px solid;
+	border-color: black;
+}
+
+button[type="reset"] {
+	height: 44px;
+	width: 97px;
+	text-transform: uppercase;
+	margin-right: 14px;
+	background: white;
+	border: 1px solid;
+	border-color: black;
+}
+
+button[type="button"] {
+	height: 44px;
+	width: 110px;
+	text-transform: uppercase;
+	margin-right: 14px;
+	background: white;
+	border: 1px solid;
+	border-color: black;
+}
+
+input[type="file"] {
+	position: relative;	
+	opacity: 0;	
+	z-index: -1;
+}
+
+.btn-upl {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 12px 30px 0 32px;
+	width: 173px;
+	height: 44px;
+	border: 1px solid;
+	vertical-align: top;
+	color: black;
+	font-size: 16px;
+	cursor: pointer;
+	text-transform: uppercase;
+	background: #fff;
+}
+
+.btn-upl:hover {
+	background: #4c3899;
+	color: #fff;
+}
+
+.btn-upl:active {
+	background: #363636;
+	color: #8a8a8a;
+}
+
+.img-upl {
+	background: url(img/upload_sprite.png) no-repeat;
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	top: 30px;
+	left: 374px;
+}
+
+.img-upl:hover {
+	background-position: -24px 0;
 }
